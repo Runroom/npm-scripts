@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const get_relative_value_1 = require("./get-relative-value");
-const rem = (size) => `${(0, get_relative_value_1.default)(size)}rem`;
+const path = require('path');
+const getRelativeValue = require(path.resolve(__dirname, './get-relative-value'));
+const rem = (size) => `${getRelativeValue(size)}rem`;
 exports.default = rem;

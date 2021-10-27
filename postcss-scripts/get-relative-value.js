@@ -1,8 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const strip_units_1 = require("./strip-units");
+const path = require('path');
+const stripUnits = require(path.resolve(__dirname, './strip-units'));
 const getRelativeValue = (size, ratio = 16) => {
-    const sizeAsNumber = typeof size === 'string' ? (0, strip_units_1.default)(size) : size;
+    const sizeAsNumber = typeof size === 'string' ? stripUnits(size) : size;
     if (typeof size === 'string' && size.endsWith('px')) {
         return sizeAsNumber / ratio;
     }

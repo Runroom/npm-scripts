@@ -25,7 +25,7 @@
     "postcss-scripts/strip-units.js"
   ],
   "scripts": {
-    "build": "tsc postcss-scripts/index.ts --target esnext --module commonjs",
+    "build": "tsc postcss-scripts/*.ts --target esnext --module commonjs",
     "format": "prettier '**/*.{js,ts}' --write",
     "test": "jest"
   },
