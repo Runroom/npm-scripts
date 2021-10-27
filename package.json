@@ -19,7 +19,7 @@
     "eslint.config.js",
     "postcss.config.js",
     "postcss-scripts/em.js",
-    "postcss-scripts/get-relative-values.js",
+    "postcss-scripts/get-relative-value.js",
     "postcss-scripts/index.js",
     "postcss-scripts/rem.js",
     "postcss-scripts/strip-units.js"
