@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 const functions = require(path.resolve(__dirname, './postcss-scripts'));
 
 module.exports = {
