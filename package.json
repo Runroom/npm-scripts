@@ -22,7 +22,8 @@
     "postcss-scripts/get-relative-value.js",
     "postcss-scripts/index.js",
     "postcss-scripts/rem.js",
-    "postcss-scripts/strip-units.js"
+    "postcss-scripts/strip-units.js",
+    "tailwind.config.js"
   ],
   "scripts": {
     "build": "tsc postcss-scripts/*.ts --target esnext --module commonjs",
