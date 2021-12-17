@@ -17,6 +17,7 @@
     "stylelint.config.js",
     "prettier.config.js",
     "eslint.config.js",
+    "eslint-with-test.config.js",
     "postcss.config.js",
     "postcss-scripts/em.js",
     "postcss-scripts/get-relative-value.js",
@@ -37,7 +38,6 @@
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
-    "@babel/eslint-parser": ">=7",
     "@babel/preset-env": ">= 7",
     "@testing-library/jest-dom": ">= 5",
     "@typescript-eslint/eslint-plugin": ">=5",
@@ -73,9 +73,6 @@
     "typescript": ">=4"
   },
   "peerDependenciesMeta": {
-    "@babel/eslint-parser": {
-      "optional": true
-    },
     "@babel/preset-env": {
       "optional": true
     },

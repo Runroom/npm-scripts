@@ -19,9 +19,17 @@ module.exports = babelConfig;
 ```
 
 ```js
-// .eslintrc.js
+// ESLint without testing configurations
+// eslint.config.js
 
 const eslintConfig = require('@runroom/npm-scripts').eslint;
+
+module.exports = eslintConfig;
+
+// ESLint with testing configurations (Cypress + Jest)
+// eslint.config.js
+
+const eslintConfig = require('@runroom/npm-scripts').eslintWithTest;
 
 module.exports = eslintConfig;
 ```

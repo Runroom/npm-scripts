@@ -4,18 +4,25 @@ module.exports = {
     parser: '@typescript-eslint/parser'
   },
   env: {
-    browser: true,
-    node: true,
-    es6: true
+    'browser': true,
+    'node': true,
+    'jest': true,
+    'es6': true,
+    'cypress/globals': true
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:cypress/recommended',
+    'plugin:jest/recommended',
     'prettier'
   ],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'cypress', 'jest'],
   rules: {
+    'jest/prefer-called-with': 'error',
+    'jest/prefer-strict-equal': 'error',
+    'jest/no-test-return-statement': 'error',
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-unused-vars': 'warn',
