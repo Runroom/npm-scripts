@@ -51,6 +51,14 @@ module.exports = postcssConfig;
 ```
 
 ```js
+// tailwind.config.js
+
+const tailwindConfig = require('@runroom/npm-scripts').tailwind;
+
+module.exports = tailwindConfig;
+```
+
+```js
 // lint-staged.config.js
 
 const lintStagedConfig = require('@runroom/npm-scripts').lintStaged;
