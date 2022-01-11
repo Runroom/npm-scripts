@@ -1,15 +1,6 @@
 module.exports = {
   arrowParens: 'avoid',
   bracketSpacing: true,
-  overrides: [
-    {
-      files: ['*.scss', '*.css', '*.yaml', '*.yml'],
-      options: {
-        singleQuote: false,
-        tabWidth: 4
-      }
-    }
-  ],
   printWidth: 100,
   proseWrap: 'always',
   quoteProps: 'consistent',
@@ -17,5 +8,14 @@ module.exports = {
   singleQuote: true,
   tabWidth: 2,
   trailingComma: 'none',
-  useTabs: false
+  useTabs: false,
+  overrides: [
+    {
+      files: ['*.scss', '*.css', '*.yaml', '*.yml', 'composer.json'],
+      options: {
+        singleQuote: false,
+        tabWidth: 4
+      }
+    }
+  ]
 };
