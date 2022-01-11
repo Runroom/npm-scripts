@@ -9,8 +9,8 @@ module.exports = {
       base: 0.5,
       unit: 'rem'
     },
-    'postcss-simple-vars': {},
     'postcss-mixins': {},
+    'postcss-simple-vars': {},
     'postcss-nested': {},
     'postcss-at-rules-variables': {},
     'postcss-sort-media-queries': { sort: 'mobile-first' },
