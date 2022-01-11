@@ -3,7 +3,7 @@ module.exports = {
   bracketSpacing: true,
   overrides: [
     {
-      files: ['*.scss', '*.css', '*.yml', '*.yml'],
+      files: ['*.scss', '*.css', '*.yaml', '*.yml'],
       options: {
         singleQuote: false,
         tabWidth: 4
