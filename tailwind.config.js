@@ -1,9 +1,5 @@
 module.exports = {
   mode: 'jit',
-  purge: {
-    variables: false
-  },
-  darkMode: false,
   theme: {
     screens: {
       s360: '22.5em',
