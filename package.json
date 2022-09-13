@@ -44,7 +44,6 @@
     "@typescript-eslint/parser": ">=5",
     "autoprefixer": ">=10",
     "babel-jest": ">=27",
-    "cssnano": ">=5",
     "eslint": ">=7",
     "eslint-config-prettier": ">= 8",
     "eslint-config-standard": ">= 16",
@@ -89,9 +88,6 @@
       "optional": true
     },
     "babel-jest": {
-      "optional": true
-    },
-    "cssnano": {
       "optional": true
     },
     "eslint": {
