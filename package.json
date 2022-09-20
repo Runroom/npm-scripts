@@ -111,6 +111,9 @@
     "eslint-plugin-testing-library": {
       "optional": true
     },
+    "husky": {
+      "optional": true
+    },
     "jest": {
       "optional": true
     },
@@ -118,6 +121,9 @@
       "optional": true
     },
     "jest-watch-typeahead": {
+      "optional": true
+    },
+    "lint-staged": {
       "optional": true
     },
     "postcss": {
