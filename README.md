@@ -143,8 +143,6 @@ module.exports = lintStagedConfig;
 ```
 
 ```json
-// package.json
-
 {
   "husky": {
     "hooks": {
