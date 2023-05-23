@@ -4,10 +4,10 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: [
-    'eslint:recommended'
-  ],
+  extends: ['eslint:recommended', 'prettier'],
+  plugins: ['prettier'],
   rules: {
+    'prettier/prettier': 'error',
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-unused-vars': 'warn',
@@ -31,6 +31,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'require-await': 'error',
-    'semi': 'error'
+    'quotes': ['error', 'single', { avoidEscape: true }],
+    'semi': ['error', 'always']
   }
 };

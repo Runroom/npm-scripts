@@ -1,5 +1,3 @@
-module.exports = {
-  'extends': [
-    './config/eslint/eslintTSTest.config.js'
-  ]
-};
+const eslintConfig = require('./index.js').eslint;
+
+module.exports = eslintConfig;

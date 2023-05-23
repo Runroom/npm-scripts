@@ -3,10 +3,7 @@ module.exports = {
     'jest': true,
     'cypress/globals': true
   },
-  extends: [
-    'plugin:cypress/recommended',
-    'plugin:jest/recommended'
-  ],
+  extends: ['plugin:cypress/recommended', 'plugin:jest/recommended'],
   plugins: ['cypress', 'jest', 'testing-library'],
   overrides: [
     {
