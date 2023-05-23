@@ -5,13 +5,13 @@ This package contains basic `npm` scripts configs for Runroom frontend projects.
 ## Usage
 
 ```bash
-yarn add --dev @runroom/npm-scripts
+npm install --save-dev @runroom/npm-scripts
 ```
 
 You will need to install all the required dependencies for each configuration. If you are intended to use all configurations, you can run the following code. Otherwise, we recommend you installing only those required for each configuration:
 
 ```bash
-yarn add --dev @babel/preset-env @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer babel-jest cssnano eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library husky jest jest-transform-stub jest-watch-typeahead lint-staged postcss postcss-at-rules-variables postcss-functions postcss-import postcss-mixins postcss-nested postcss-simple-vars postcss-sort-media-queries postcss-space prettier stylelint stylelint-config-prettier stylelint-prettier typescript
+npm install --save-dev @babel/preset-env @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser autoprefixer babel-jest cssnano eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library husky jest jest-transform-stub jest-watch-typeahead lint-staged postcss postcss-at-rules-variables postcss-functions postcss-import postcss-mixins postcss-nested postcss-simple-vars postcss-sort-media-queries postcss-space prettier stylelint stylelint-config-prettier stylelint-prettier typescript
 ```
 
 ...and then import/extend each config file with the ones from this library:
@@ -29,7 +29,7 @@ module.exports = babelConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev @babel/preset-env
+npm install --save-dev @babel/preset-env
 ```
 
 ## ESLint
@@ -48,7 +48,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier typescript ts-loader
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier typescript ts-loader
 ```
 
 ```js
@@ -63,7 +63,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader
+npm install --save-dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader
 ```
 
 ## Prettier
@@ -79,7 +79,7 @@ module.exports = prettierConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev prettier
+npm install --save-dev prettier
 ```
 
 ## Stylelint
@@ -95,7 +95,7 @@ module.exports = stylelintConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev stylelint stylelint-config-prettier stylelint-prettier prettier
+npm install --save-dev stylelint stylelint-config-prettier stylelint-prettier prettier
 ```
 
 ## PostCSS
@@ -111,7 +111,7 @@ module.exports = postcssConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev autoprefixer cssnano postcss postcss-at-rules-variables postcss-functions postcss-import postcss-mixins postcss-nested postcss-simple-vars postcss-sort-media-queries postcss-space
+npm install --save-dev autoprefixer cssnano postcss postcss-at-rules-variables postcss-functions postcss-import postcss-mixins postcss-nested postcss-simple-vars postcss-sort-media-queries postcss-space
 ```
 
 ## Tailwind
@@ -129,7 +129,7 @@ module.exports = tailwindConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev tailwindcss
+npm install --save-dev tailwindcss
 ```
 
 ## Lint Staged
@@ -157,7 +157,7 @@ module.exports = lintStagedConfig;
 **Required dependencies:**
 
 ```bash
-yarn add --dev husky lint-staged
+npm install --save-dev husky lint-staged
 ```
 
 ### VSC config
@@ -168,11 +168,11 @@ This config should give you autoformatting on save in `.js`, `.ts`, `.css` and `
 {
   "[javascript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.formatOnSave": true,
