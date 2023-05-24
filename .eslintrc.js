@@ -1,3 +1,3 @@
-const eslintConfig = require('./index.js').eslint;
+const eslintConfig = require('./index.js').eslintTSWithTest;
 
 module.exports = eslintConfig;
