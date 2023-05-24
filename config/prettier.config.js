@@ -11,7 +11,7 @@ module.exports = {
   useTabs: false,
   overrides: [
     {
-      files: ['*.scss', '*.css', '*.yaml', '*.yml', 'composer.json'],
+      files: ['*.scss', '*.css', '*.yaml', '*.yml', '*.json'],
       options: {
         singleQuote: false,
         tabWidth: 4

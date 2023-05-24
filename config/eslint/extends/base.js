@@ -1,28 +1,13 @@
 module.exports = {
-  root: true,
-  parserOptions: {
-    parser: '@typescript-eslint/parser'
-  },
   env: {
-    'browser': true,
-    'node': true,
-    'jest': true,
-    'es6': true,
-    'cypress/globals': true
+    browser: true,
+    node: true,
+    es6: true
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:cypress/recommended',
-    'plugin:jest/recommended',
-    'prettier'
-  ],
-  plugins: ['@typescript-eslint', 'cypress', 'jest'],
+  extends: ['eslint:recommended', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    'jest/prefer-called-with': 'error',
-    'jest/prefer-strict-equal': 'error',
-    'jest/no-test-return-statement': 'error',
+    'prettier/prettier': 'error',
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-unused-vars': 'warn',
@@ -46,6 +31,7 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-template': 'error',
     'require-await': 'error',
-    'semi': 'error'
+    'quotes': ['error', 'single', { avoidEscape: true }],
+    'semi': ['error', 'always']
   }
 };

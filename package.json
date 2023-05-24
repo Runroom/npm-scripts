@@ -1,177 +1,194 @@
 {
-  "name": "@runroom/npm-scripts",
-  "version": "1.2.10",
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Runroom/npm-scripts"
-  },
-  "license": "MIT",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "babel.config.js",
-    "jest.setup.js",
-    "jest.config.js",
-    "lint-staged.config.js",
-    "stylelint.config.js",
-    "prettier.config.js",
-    "eslint.config.js",
-    "eslint-with-test.config.js",
-    "postcss.config.js",
-    "postcss-scripts/em.js",
-    "postcss-scripts/get-relative-value.js",
-    "postcss-scripts/index.js",
-    "postcss-scripts/rem.js",
-    "postcss-scripts/strip-units.js",
-    "tailwind.config.js"
-  ],
-  "scripts": {
-    "build": "tsc postcss-scripts/*.ts --target esnext --module commonjs",
-    "format": "prettier '**/*.{js,ts}' --write",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.15.8",
-    "jest": "^27.3.1",
-    "prettier": "^2.2.1",
-    "typescript": "^4.4.4"
-  },
-  "peerDependencies": {
-    "@babel/preset-env": ">= 7",
-    "@testing-library/jest-dom": ">= 5",
-    "@typescript-eslint/eslint-plugin": ">=5",
-    "@typescript-eslint/parser": ">=5",
-    "autoprefixer": ">=10",
-    "babel-jest": ">=27",
-    "eslint": ">=7",
-    "eslint-config-prettier": ">= 8",
-    "eslint-config-standard": ">= 16",
-    "eslint-plugin-cypress": ">= 2",
-    "eslint-plugin-jest": ">=25",
-    "eslint-plugin-prettier": ">=4",
-    "eslint-plugin-testing-library": ">= 4",
-    "husky": ">=7",
-    "jest": "^27",
-    "jest-transform-stub": ">= 2",
-    "jest-watch-typeahead": ">=1.0",
-    "lint-staged": ">=11",
-    "postcss": ">=8",
-    "postcss-at-rules-variables": ">=0",
-    "postcss-functions": ">=4",
-    "postcss-import": ">=14",
-    "postcss-mixins": ">=8",
-    "postcss-nested": ">=5",
-    "postcss-simple-vars": ">=6",
-    "postcss-sort-media-queries": ">=4",
-    "postcss-space": ">=1",
-    "prettier": ">= 2",
-    "stylelint": ">= 13",
-    "stylelint-config-prettier": ">=9",
-    "stylelint-prettier": ">= 1",
-    "typescript": ">=4"
-  },
-  "peerDependenciesMeta": {
-    "@babel/preset-env": {
-      "optional": true
+    "name": "@runroom/npm-scripts",
+    "version": "1.2.10",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Runroom/npm-scripts"
     },
-    "@testing-library/jest-dom": {
-      "optional": true
+    "license": "MIT",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "config/babel.config.js",
+        "config/jest/jest.setup.js",
+        "config/jest/jest.config.js",
+        "config/lint-staged.config.js",
+        "config/stylelint.config.js",
+        "config/prettier.config.js",
+        "config/eslint/eslint.config.js",
+        "config/eslint/eslint-with-test.config.js",
+        "config/postcss/postcss.config.js",
+        "config/postcss/postcss-scripts/em.js",
+        "config/postcss/postcss-scripts/get-relative-value.js",
+        "config/postcss/postcss-scripts/index.js",
+        "config/postcss/postcss-scripts/rem.js",
+        "config/postcss/postcss-scripts/strip-units.js",
+        "config/tailwind.config.js"
+    ],
+    "scripts": {
+        "build": "tsc config/postcss/postcss-scripts/*.ts --target esnext --module commonjs",
+        "format": "prettier '**/*.{js,ts}' --write",
+        "test": "jest"
     },
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
+    "devDependencies": {
+        "@babel/preset-env": "^7.21.5",
+        "@typescript-eslint/eslint-plugin": "^5.59.6",
+        "@typescript-eslint/parser": "^5.59.6",
+        "confusing-browser-globals": "^1.0.11",
+        "eslint-config-prettier": "^8.8.0",
+        "eslint-plugin-cypress": "^2.13.3",
+        "eslint-plugin-jest": "^27.2.1",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-testing-library": "^5.11.0",
+        "jest": "^29.5.0",
+        "jest-environment-jsdom": "^29.5.0",
+        "prettier": "^2.8.8",
+        "typescript": "^5.0.4"
     },
-    "@typescript-eslint/parser": {
-      "optional": true
+    "peerDependencies": {
+        "@babel/preset-env": ">=7",
+        "@testing-library/jest-dom": ">=5",
+        "@typescript-eslint/eslint-plugin": ">=5",
+        "@typescript-eslint/parser": ">=5",
+        "autoprefixer": ">=10",
+        "babel-jest": ">=27",
+        "eslint": ">=7",
+        "eslint-config-prettier": ">= 8",
+        "eslint-config-standard": ">= 16",
+        "eslint-plugin-cypress": ">= 2",
+        "eslint-plugin-import": ">=2.26.0",
+        "eslint-plugin-jest": ">=25",
+        "eslint-plugin-no-only-tests": ">=3.1.0",
+        "eslint-plugin-prettier": ">=4",
+        "eslint-plugin-testing-library": ">=4",
+        "husky": ">=7",
+        "jest": ">=27",
+        "jest-transform-stub": ">=2",
+        "jest-watch-typeahead": ">=1.0",
+        "lint-staged": ">=11",
+        "postcss": ">=8",
+        "postcss-at-rules-variables": ">=0",
+        "postcss-functions": ">=4",
+        "postcss-import": ">=14",
+        "postcss-mixins": ">=8",
+        "postcss-nested": ">=5",
+        "postcss-simple-vars": ">=6",
+        "postcss-sort-media-queries": ">=4",
+        "postcss-space": ">=1",
+        "prettier": ">=2",
+        "stylelint": ">=13",
+        "stylelint-config-prettier": ">=9",
+        "stylelint-prettier": ">=1",
+        "typescript": ">=4"
     },
-    "autoprefixer": {
-      "optional": true
+    "peerDependenciesMeta": {
+        "@babel/preset-env": {
+            "optional": true
+        },
+        "@testing-library/jest-dom": {
+            "optional": true
+        },
+        "@typescript-eslint/eslint-plugin": {
+            "optional": true
+        },
+        "@typescript-eslint/parser": {
+            "optional": true
+        },
+        "autoprefixer": {
+            "optional": true
+        },
+        "babel-jest": {
+            "optional": true
+        },
+        "eslint": {
+            "optional": true
+        },
+        "eslint-config-prettier": {
+            "optional": true
+        },
+        "eslint-config-standard": {
+            "optional": true
+        },
+        "eslint-plugin-cypress": {
+            "optional": true
+        },
+        "eslint-plugin-import": {
+            "optional": true
+        },
+        "eslint-plugin-jest": {
+            "optional": true
+        },
+        "eslint-plugin-no-only-tests": {
+            "optional": true
+        },
+        "eslint-plugin-prettier": {
+            "optional": true
+        },
+        "eslint-plugin-testing-library": {
+            "optional": true
+        },
+        "husky": {
+            "optional": true
+        },
+        "jest": {
+            "optional": true
+        },
+        "jest-transform-stub": {
+            "optional": true
+        },
+        "jest-watch-typeahead": {
+            "optional": true
+        },
+        "lint-staged": {
+            "optional": true
+        },
+        "postcss": {
+            "optional": true
+        },
+        "postcss-at-rules-variables": {
+            "optional": true
+        },
+        "postcss-functions": {
+            "optional": true
+        },
+        "postcss-import": {
+            "optional": true
+        },
+        "postcss-mixins": {
+            "optional": true
+        },
+        "postcss-nested": {
+            "optional": true
+        },
+        "postcss-simple-vars": {
+            "optional": true
+        },
+        "postcss-sort-media-queries": {
+            "optional": true
+        },
+        "postcss-space": {
+            "optional": true
+        },
+        "prettier": {
+            "optional": true
+        },
+        "stylelint": {
+            "optional": true
+        },
+        "stylelint-config-prettier": {
+            "optional": true
+        },
+        "stylelint-prettier": {
+            "optional": true
+        }
     },
-    "babel-jest": {
-      "optional": true
+    "publishConfig": {
+        "access": "public"
     },
-    "eslint": {
-      "optional": true
-    },
-    "eslint-config-prettier": {
-      "optional": true
-    },
-    "eslint-config-standard": {
-      "optional": true
-    },
-    "eslint-plugin-cypress": {
-      "optional": true
-    },
-    "eslint-plugin-jest": {
-      "optional": true
-    },
-    "eslint-plugin-prettier": {
-      "optional": true
-    },
-    "eslint-plugin-testing-library": {
-      "optional": true
-    },
-    "husky": {
-      "optional": true
-    },
-    "jest": {
-      "optional": true
-    },
-    "jest-transform-stub": {
-      "optional": true
-    },
-    "jest-watch-typeahead": {
-      "optional": true
-    },
-    "lint-staged": {
-      "optional": true
-    },
-    "postcss": {
-      "optional": true
-    },
-    "postcss-at-rules-variables": {
-      "optional": true
-    },
-    "postcss-functions": {
-      "optional": true
-    },
-    "postcss-import": {
-      "optional": true
-    },
-    "postcss-mixins": {
-      "optional": true
-    },
-    "postcss-nested": {
-      "optional": true
-    },
-    "postcss-simple-vars": {
-      "optional": true
-    },
-    "postcss-sort-media-queries": {
-      "optional": true
-    },
-    "postcss-space": {
-      "optional": true
-    },
-    "prettier": {
-      "optional": true
-    },
-    "stylelint": {
-      "optional": true
-    },
-    "stylelint-config-prettier": {
-      "optional": true
-    },
-    "stylelint-prettier": {
-      "optional": true
+    "release": {
+        "branches": [
+            "main"
+        ]
     }
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
-  }
 }

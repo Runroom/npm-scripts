@@ -1,11 +1,13 @@
 module.exports = {
-  babel: require('./babel.config'),
-  eslint: require('./eslint.config'),
-  eslintWithTest: require('./eslint-with-test.config'),
-  prettier: require('./prettier.config'),
-  stylelint: require('./stylelint.config'),
-  jest: require('./jest.config'),
-  lintStaged: require('./lint-staged.config'),
-  postcss: require('./postcss.config'),
-  tailwind: require('./tailwind.config')
+  babel: require('./config/babel.config'),
+  eslint: require('./config/eslint/eslint.config'),
+  eslintTS: require('./config/eslint/eslintTS.config'),
+  eslintTSWithTest: require('./config/eslint/eslintTSTest.config'),
+  eslintWithTest: require('./config/eslint/eslintTest.config'),
+  jest: require('./config/jest/jest.config'),
+  lintStaged: require('./config/lint-staged.config'),
+  postcss: require('./config/postcss/postcss.config'),
+  prettier: require('./config/prettier.config'),
+  stylelint: require('./config/stylelint.config'),
+  tailwind: require('./config/tailwind.config')
 };
