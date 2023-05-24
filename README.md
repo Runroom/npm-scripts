@@ -34,10 +34,10 @@ npm install --save-dev @babel/preset-env
 
 ## ESLint
 
-With eslint, you have two possible configurations. You can choose the regular configuration with Typescript or the extended one with Cypress + Jest for testing purposes.
+When using eslint, there are four available configurations to choose from. The first option is the regular configuration, which supports plain JavaScript (vanilla). The second option is the extended configuration that includes Cypress and Jest for additional testing capabilities. There are also separate configurations available for TypeScript users, as well as an extended configuration specifically designed for testing purposes.
 
 ```js
-// ESLint without testing configurations
+// ESLint with plain JavaScript (vanilla)
 // eslint.config.js
 
 const eslintConfig = require('@runroom/npm-scripts').eslint;
@@ -48,7 +48,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier typescript ts-loader
+npm install --save-dev eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier
 ```
 
 ```js
@@ -56,6 +56,35 @@ npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parse
 // eslint.config.js
 
 const eslintConfig = require('@runroom/npm-scripts').eslintWithTest;
+
+module.exports = eslintConfig;
+```
+
+**Required dependencies:**
+
+```bash
+npm install --save-dev @testing-library/jest-dom babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier
+```
+
+```js
+// ESLint with TypeScript
+// eslint.config.js
+
+const eslintConfig = require('@runroom/npm-scripts').eslintTS;
+
+module.exports = eslintConfig;
+```
+**Required dependencies:**
+
+```bash
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier typescript ts-loader
+```
+
+```js
+// ESLint with TypeScript and testing configurations (Cypress + Jest)
+// eslint.config.js
+
+const eslintConfig = require('@runroom/npm-scripts').eslintTSWithTest;
 
 module.exports = eslintConfig;
 ```
