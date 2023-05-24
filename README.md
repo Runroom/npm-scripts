@@ -34,7 +34,7 @@ npm install --save-dev @babel/preset-env
 
 ## ESLint
 
-When using eslint, there are four available configurations to choose from. The first option is the regular configuration, which supports plain JavaScript (vanilla). The second option is the extended configuration that includes Cypress and Jest for additional testing capabilities. There are also separate configurations available for TypeScript users, as well as an extended configuration specifically designed for testing purposes.
+When using eslint, there are six available configurations to choose from. The first option is the regular configuration, which supports plain JavaScript (vanilla). The second option is the extended configuration that includes Cypress and Jest for additional testing capabilities. The third option is specifically tailored for TypeScript users. Additionally, there are two new configurations available for React and Next.js.
 
 ```js
 // ESLint with plain JavaScript (vanilla)
@@ -93,6 +93,36 @@ module.exports = eslintConfig;
 
 ```bash
 npm install --save-dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader
+```
+
+```js
+// ESLint with React
+// eslint.config.js
+
+const eslintConfig = require('@runroom/npm-scripts').eslintReact;
+
+module.exports = eslintConfig;
+```
+
+**Required dependencies:**
+
+```bash
+npm install --save-dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader eslint-plugin-react eslint-plugin-react-hooks
+```
+
+```js
+// ESLint with Next
+// eslint.config.js
+
+const eslintConfig = require('@runroom/npm-scripts').eslintNext;
+
+module.exports = eslintConfig;
+```
+
+**Required dependencies:**
+
+```bash
+npm install --save-dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader eslint-plugin-react eslint-plugin-react-hooks eslint-config-next
 ```
 
 ## Prettier

@@ -1,6 +1,8 @@
 module.exports = {
   babel: require('./config/babel.config'),
   eslint: require('./config/eslint/eslint.config'),
+  eslintNext: require('./config/eslint/eslintNext.config'),
+  eslintReact: require('./config/eslint/eslintReact.config'),
   eslintTS: require('./config/eslint/eslintTS.config'),
   eslintTSWithTest: require('./config/eslint/eslintTSTest.config'),
   eslintWithTest: require('./config/eslint/eslintTest.config'),
