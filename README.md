@@ -119,12 +119,6 @@ const eslintConfig = require('@runroom/npm-scripts').eslintNext;
 module.exports = eslintConfig;
 ```
 
-**Required dependencies:**
-
-```bash
-npm install --save-dev @testing-library/jest-dom @typescript-eslint/eslint-plugin @typescript-eslint/parser babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier typescript ts-loader eslint-plugin-react eslint-plugin-react-hooks eslint-config-next
-```
-
 ## Prettier
 
 ```js

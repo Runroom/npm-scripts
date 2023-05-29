@@ -1,6 +1,6 @@
 {
     "name": "@runroom/npm-scripts",
-    "version": "2.1.0",
+    "version": "1.2.10",
     "description": "",
     "repository": {
         "type": "git",
@@ -30,9 +30,6 @@
         "build": "tsc config/postcss/postcss-scripts/*.ts --target esnext --module commonjs",
         "format": "prettier '**/*.{js,ts}' --write",
         "test": "jest"
-    },
-    "engines": {
-        "node": ">=18"
     },
     "devDependencies": {
         "@babel/preset-env": "^7.21.5",
@@ -123,9 +120,6 @@
             "optional": true
         },
         "eslint-plugin-jest": {
-            "optional": true
-        },
-        "eslint-config-next": {
             "optional": true
         },
         "eslint-plugin-no-only-tests": {
