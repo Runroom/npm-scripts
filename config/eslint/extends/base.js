@@ -4,6 +4,11 @@ module.exports = {
     node: true,
     es6: true
   },
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
+  },
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['prettier'],
   rules: {

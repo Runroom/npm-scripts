@@ -1,10 +1,9 @@
 module.exports = {
   env: {
-    'jest': true,
-    'cypress/globals': true
+    jest: true
   },
-  extends: ['plugin:cypress/recommended', 'plugin:jest/recommended'],
-  plugins: ['cypress', 'jest', 'testing-library'],
+  extends: ['plugin:jest/recommended'],
+  plugins: ['jest', 'testing-library'],
   overrides: [
     {
       files: ['**/tests/**/*', '**/__tests__/**/*', '**/*.{spec,test}.*'],
