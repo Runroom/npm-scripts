@@ -63,7 +63,6 @@
         "eslint-plugin-cypress": ">= 2",
         "eslint-plugin-import": ">=2.26.0",
         "eslint-plugin-jest": ">=25",
-        "eslint-config-next": ">=12",
         "eslint-plugin-no-only-tests": ">=3.1.0",
         "eslint-plugin-prettier": ">=4",
         "eslint-plugin-react": ">=7.31.11",
@@ -117,7 +116,16 @@
         "eslint": {
             "optional": true
         },
+        "eslint-config-next": {
+            "optional": true
+        },
         "eslint-config-prettier": {
+            "optional": true
+        },
+        "eslint-plugin-react": {
+            "optional": true
+        },
+        "eslint-plugin-react-hooks": {
             "optional": true
         },
         "eslint-config-standard": {
