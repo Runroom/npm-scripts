@@ -1,8 +1,7 @@
-'use strict';
-Object.defineProperty(exports, '__esModule', { value: true });
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.rem = exports.em = void 0;
-const path = require('path');
-const em = require(path.resolve(__dirname, './em'));
-exports.em = em;
-const rem = require(path.resolve(__dirname, './rem'));
-exports.rem = rem;
+const em_1 = require("./em");
+exports.em = em_1.default;
+const rem_1 = require("./rem");
+exports.rem = rem_1.default;

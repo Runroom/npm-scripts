@@ -1,6 +1,6 @@
-const { em, rem } = require('.');
-const { default: getRelativeValue } = require('./get-relative-value');
-const { default: stripUnits } = require('./strip-units');
+import { em, rem } from './index.js';
+import getRelativeValue from './get-relative-value.js';
+import stripUnits from './strip-units.js';
 
 it('removes units', () => {
   expect(stripUnits(10)).toStrictEqual(10);
