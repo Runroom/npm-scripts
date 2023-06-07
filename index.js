@@ -1,15 +1,25 @@
+const pathJoin = require('path').join;
+
 module.exports = {
-  babel: require('./config/babel.config'),
-  eslint: require('./config/eslint/eslint.config'),
-  eslintNext: require('./config/eslint/eslintNext.config'),
-  eslintReact: require('./config/eslint/eslintReact.config'),
-  eslintTS: require('./config/eslint/eslintTS.config'),
-  eslintTSWithTest: require('./config/eslint/eslintTSTest.config'),
-  eslintWithTest: require('./config/eslint/eslintTest.config'),
-  jest: require('./config/jest/jest.config'),
-  lintStaged: require('./config/lint-staged.config'),
-  postcss: require('./config/postcss/postcss.config'),
-  prettier: require('./config/prettier.config'),
-  stylelint: require('./config/stylelint.config'),
-  tailwind: require('./config/tailwind.config')
+  babelConfig: require('./config/babel.config'),
+  eslintExtends: {
+    base: pathJoin(__dirname, 'config/eslint/extends/base.js'),
+    cypress: pathJoin(__dirname, 'config/eslint/extends/cypress.js'),
+    jest: pathJoin(__dirname, 'config/eslint/extends/jest.js'),
+    next: pathJoin(__dirname, 'config/eslint/extends/next.js'),
+    react: pathJoin(__dirname, 'config/eslint/extends/react.js'),
+    typescript: pathJoin(__dirname, 'config/eslint/extends/typescript.js')
+  },
+  eslintConfig: require('./config/eslint/eslint.config'),
+  eslintNextConfig: require('./config/eslint/eslintNext.config'),
+  eslintReactConfig: require('./config/eslint/eslintReact.config'),
+  eslintTSConfig: require('./config/eslint/eslintTS.config'),
+  eslintTSWithTestConfig: require('./config/eslint/eslintTSTest.config'),
+  eslintWithTestConfig: require('./config/eslint/eslintTest.config'),
+  jestConfig: require('./config/jest/jest.config'),
+  lintStagedConfig: require('./config/lint-staged.config'),
+  postcssConfig: require('./config/postcss/postcss.config'),
+  prettierConfig: require('./config/prettier.config'),
+  stylelintConfig: require('./config/stylelint.config'),
+  tailwindConfig: require('./config/tailwind.config')
 };
