@@ -1,14 +1,33 @@
 # `npm-scripts`
 
-This package provides basic `npm` scripts configurations for Runroom frontend projects.
+This package is a collection of basic `npm` script configurations for Runroom frontend projects. It provides a set of pre-configured scripts and dependencies to streamline the development process and improve code quality.
 
-## Usage
+## Features
+
+- Ready-to-use configurations for Babel, ESLint, Prettier, Stylelint, PostCSS, Tailwind, and Lint Staged.
+- Multiple ESLint configurations available for plain JavaScript (vanilla), TypeScript, React, and Next.js projects.
+- Customizable configurations that can be extended or merged to suit specific project needs.
+- Integration with popular testing frameworks like Cypress and Jest.
+- Automatic code formatting on save.
+- Easy installation of required dependencies for each configuration.
+
+## Getting Started
+
+To get started with `npm-scripts`, follow these simple steps:
+
+1. Install the package as a development dependency in your project:
 
 ```bash
 npm install --save-dev @runroom/npm-scripts
 ```
 
-To use the configurations provided by this package, you need to install the required dependencies of each configuration.
+2. Install the required dependencies based on the configurations you intend to use. You can either install all dependencies for all configurations or only the ones required for each specific configuration.
+
+3. Import or extend the desired configuration files into your project's configuration files (e.g., `.babelrc.js`, `.eslintrc.js`, etc.).
+
+4. Customize the configurations as needed, adding or overriding rules to fit your project requirements.
+
+5. Start using the pre-configured scripts and enjoy an enhanced development experience with improved code quality.
 
 ## Babel
 
@@ -314,3 +333,9 @@ This configuration provides auto-formatting on save for `.js`, `.ts`, `.css`, an
   }
 }
 ```
+
+### Contributing
+We welcome contributions to npm-scripts! If you encounter any issues, have suggestions, or want to add new features, please feel free to submit an issue or create a pull request.
+
+### License
+npm-scripts is open-source software licensed under the MIT license. Feel free to use, modify, and distribute it as per the terms of the license.

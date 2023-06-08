@@ -1,7 +1,7 @@
 {
     "name": "@runroom/npm-scripts",
     "version": "1.2.10",
-    "description": "",
+    "description": "This package is a collection of basic npm script configurations for Runroom frontend projects. It provides a set of pre-configured scripts and dependencies to streamline the development process and improve code quality.",
     "repository": {
         "type": "git",
         "url": "https://github.com/Runroom/npm-scripts"
@@ -30,6 +30,9 @@
         "build": "tsc config/postcss/postcss-scripts/*.ts --target esnext --module commonjs",
         "format": "prettier '**/*.{js,ts}' --write",
         "test": "jest"
+    },
+    "engines": {
+        "node": ">=14"
     },
     "devDependencies": {
         "@babel/core": "7.18.6",
