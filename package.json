@@ -43,6 +43,7 @@
         "@typescript-eslint/parser": "5",
         "autoprefixer": "10",
         "babel-jest": "27",
+        "confusing-browser-globals": "1",
         "eslint": "7",
         "eslint-config-next": "12",
         "eslint-config-prettier": " 8",
@@ -84,6 +85,7 @@
         "@typescript-eslint/parser": ">=5",
         "autoprefixer": ">=10",
         "babel-jest": ">=27",
+        "confusing-browser-globals": ">=1",
         "eslint": ">=7",
         "eslint-config-next": ">=12",
         "eslint-config-prettier": ">= 8",
@@ -139,6 +141,9 @@
             "optional": true
         },
         "babel-jest": {
+            "optional": true
+        },
+        "confusing-browser-globals": {
             "optional": true
         },
         "eslint": {
