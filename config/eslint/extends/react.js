@@ -12,7 +12,7 @@ module.exports = {
     'array-callback-return': 'warn',
     'default-case': ['warn', { commentPattern: '^no default$' }],
     'dot-location': ['warn', 'property'],
-    eqeqeq: ['warn', 'smart'],
+    'eqeqeq': ['warn', 'smart'],
     'new-parens': 'warn',
     'no-array-constructor': 'warn',
     'no-caller': 'warn',
@@ -40,7 +40,18 @@ module.exports = {
     'no-labels': ['warn', { allowLoop: true, allowSwitch: false }],
     'no-lone-blocks': 'warn',
     'no-loop-func': 'warn',
-    'no-mixed-operators': ['warn', { groups: [['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], allowSamePrecedence: false }],
+    'no-mixed-operators': [
+      'warn',
+      {
+        groups: [
+          ['&', '|', '^', '~', '<<', '>>', '>>>'],
+          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+          ['&&', '||'],
+          ['in', 'instanceof']
+        ],
+        allowSamePrecedence: false
+      }
+    ],
     'no-multi-str': 'warn',
     'no-global-assign': 'warn',
     'no-unsafe-negation': 'warn',
@@ -66,24 +77,44 @@ module.exports = {
     'no-undef': 'error',
     'no-restricted-globals': ['error'].concat(restrictedGlobals),
     'no-unreachable': 'warn',
-    'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }],
+    'no-unused-expressions': [
+      'error',
+      { allowShortCircuit: true, allowTernary: true, allowTaggedTemplates: true }
+    ],
     'no-unused-labels': 'warn',
     'no-use-before-define': ['warn', { functions: false, classes: false, variables: false }],
     'no-useless-computed-key': 'warn',
     'no-useless-concat': 'warn',
     'no-useless-constructor': 'warn',
     'no-useless-escape': 'warn',
-    'no-useless-rename': ['warn', { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }],
+    'no-useless-rename': [
+      'warn',
+      { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }
+    ],
     'no-with': 'warn',
     'no-whitespace-before-property': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
     'require-yield': 'warn',
     'rest-spread-spacing': ['warn', 'never'],
-    strict: ['warn', 'never'],
+    'strict': ['warn', 'never'],
     'unicode-bom': ['warn', 'never'],
     'use-isnan': 'warn',
     'valid-typeof': 'warn',
-    'no-restricted-properties': ['error', { object: 'require', property: 'ensure', message: 'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting' }, { object: 'System', property: 'import', message: 'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting' }],
+    'no-restricted-properties': [
+      'error',
+      {
+        object: 'require',
+        property: 'ensure',
+        message:
+          'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting'
+      },
+      {
+        object: 'System',
+        property: 'import',
+        message:
+          'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting'
+      }
+    ],
     'getter-return': 'warn',
     'import/first': 'error',
     'import/no-amd': 'error',
@@ -101,7 +132,7 @@ module.exports = {
     'react/jsx-no-target-blank': 'warn',
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': ['warn', { allowAllCaps: true, ignore: [] }],
-    'react/jsx-tag-spacing': ['error', { 'beforeSelfClosing': 'never' }],
+    'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
     'react/jsx-uses-react': 'warn',
     'react/jsx-uses-vars': 'warn',
     'react/no-danger-with-children': 'warn',
