@@ -130,7 +130,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser confusing-browser-globals eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript 
 ```
 
 To use the ESLint configuration for Next.js:
