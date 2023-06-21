@@ -34,7 +34,7 @@
         "config/postcss/postcss-scripts/get-relative-value.js",
         "config/postcss/postcss-scripts/index.js",
         "config/postcss/postcss-scripts/rem.js",
-        "config/postcss/postcss-scripts/strip-units.js",
+        "config/postcss/postcss-scripts/strip-units.js"
     ],
     "scripts": {
         "build": "tsc config/postcss/postcss-scripts/*.ts --target esnext --module commonjs",
