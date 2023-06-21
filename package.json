@@ -1,6 +1,6 @@
 {
     "name": "@runroom/npm-scripts",
-    "version": "1.2.10",
+    "version": "2.0.0",
     "description": "This package is a collection of basic npm script configurations for Runroom frontend projects. It provides a set of pre-configured scripts and dependencies to streamline the development process and improve code quality.",
     "repository": {
         "type": "git",
