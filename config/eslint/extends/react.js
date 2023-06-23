@@ -11,9 +11,7 @@ module.exports = {
     // http://eslint.org/docs/rules/
     'array-callback-return': 'warn',
     'default-case': ['warn', { commentPattern: '^no default$' }],
-    'dot-location': ['warn', 'property'],
     'eqeqeq': ['warn', 'smart'],
-    'new-parens': 'warn',
     'no-array-constructor': 'warn',
     'no-caller': 'warn',
     'no-cond-assign': ['warn', 'except-parens'],
@@ -40,18 +38,6 @@ module.exports = {
     'no-labels': ['warn', { allowLoop: true, allowSwitch: false }],
     'no-lone-blocks': 'warn',
     'no-loop-func': 'warn',
-    'no-mixed-operators': [
-      'warn',
-      {
-        groups: [
-          ['&', '|', '^', '~', '<<', '>>', '>>>'],
-          ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
-          ['&&', '||'],
-          ['in', 'instanceof']
-        ],
-        allowSamePrecedence: false
-      }
-    ],
     'no-multi-str': 'warn',
     'no-global-assign': 'warn',
     'no-unsafe-negation': 'warn',
@@ -92,12 +78,9 @@ module.exports = {
       { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false }
     ],
     'no-with': 'warn',
-    'no-whitespace-before-property': 'warn',
     'react-hooks/exhaustive-deps': 'warn',
     'require-yield': 'warn',
-    'rest-spread-spacing': ['warn', 'never'],
     'strict': ['warn', 'never'],
-    'unicode-bom': ['warn', 'never'],
     'use-isnan': 'warn',
     'valid-typeof': 'warn',
     'no-restricted-properties': [
@@ -122,17 +105,13 @@ module.exports = {
     'import/no-webpack-loader-syntax': 'error',
 
     // React and JSX rules
-    'jsx-quotes': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react/forbid-foreign-prop-types': ['warn', { allowInPropTypes: true }],
-    'react/jsx-equals-spacing': ['error', 'never'],
-    'react/jsx-indent-props': ['error', 'first'],
     'react/jsx-no-comment-textnodes': 'warn',
     'react/jsx-no-duplicate-props': 'warn',
     'react/jsx-no-target-blank': 'warn',
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': ['warn', { allowAllCaps: true, ignore: [] }],
-    'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'always' }],
     'react/jsx-uses-react': 'warn',
     'react/jsx-uses-vars': 'warn',
     'react/no-danger-with-children': 'warn',

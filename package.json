@@ -62,7 +62,6 @@
         "eslint-plugin-import": "2.26.0",
         "eslint-plugin-jest": "25",
         "eslint-plugin-no-only-tests": "3.1.0",
-        "eslint-plugin-prettier": "4",
         "eslint-plugin-react": "7.31.11",
         "eslint-plugin-react-hooks": "4.6.0",
         "eslint-plugin-testing-library": "4",
@@ -104,7 +103,6 @@
         "eslint-plugin-import": ">=2.26.0",
         "eslint-plugin-jest": ">=25",
         "eslint-plugin-no-only-tests": ">=3.1.0",
-        "eslint-plugin-prettier": ">=4",
         "eslint-plugin-react": ">=7.31.11",
         "eslint-plugin-react-hooks": ">=4.6.0",
         "eslint-plugin-testing-library": ">=4",
@@ -184,9 +182,6 @@
             "optional": true
         },
         "eslint-plugin-no-only-tests": {
-            "optional": true
-        },
-        "eslint-plugin-prettier": {
             "optional": true
         },
         "eslint-plugin-testing-library": {
