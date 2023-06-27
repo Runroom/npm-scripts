@@ -64,7 +64,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @babel/core @babel/eslint-parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier
+npm install --save-dev @babel/core @babel/eslint-parser eslint eslint-config-prettier eslint-config-standard prettier
 ```
 
 To use the ESLint configuration with testing support (Cypress + Jest):
@@ -80,7 +80,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @babel/core @babel/eslint-parser @testing-library/jest-dom babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-prettier eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier
+npm install --save-dev @babel/core @babel/eslint-parser @testing-library/jest-dom babel-jest eslint eslint-config-prettier eslint-config-standard eslint-plugin-cypress eslint-plugin-jest eslint-plugin-testing-library jest jest-transform-stub jest-watch-typeahead prettier
 ```
 
 To use the ESLint configuration for TypeScript:
@@ -96,7 +96,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard prettier ts-loader typescript 
 ```
 
 To use the ESLint configuration for TypeScript with testing support (Cypress + Jest):
@@ -130,7 +130,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser confusing-browser-globals eslint eslint-config-prettier eslint-config-standard eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser confusing-browser-globals eslint eslint-config-prettier eslint-config-standard eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript 
 ```
 
 To use the ESLint configuration for Next.js:
@@ -146,7 +146,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next eslint-config-prettier eslint-config-standard eslint-plugin-prettier prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next eslint-config-prettier eslint-config-standard prettier ts-loader typescript 
 ```
 
 ### Custom Configuration
@@ -242,7 +242,7 @@ module.exports = stylelintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev stylelint stylelint-config-prettier stylelint-prettier prettier
+npm install --save-dev stylelint stylelint-config-prettier stylelint-config-recommended prettier
 ```
 
 ## PostCSS
