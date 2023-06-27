@@ -9,8 +9,6 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton']
       }
     ],
-    'jsx-quotes': 'error',
-    'react/jsx-tag-spacing': ['error', { beforeSelfClosing: 'never' }],
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'import/no-anonymous-default-export': 'error',

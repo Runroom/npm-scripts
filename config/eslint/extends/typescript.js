@@ -6,7 +6,6 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
-    '@typescript-eslint/no-unused-vars': ['error'],
-    '@typescript-eslint/type-annotation-spacing': 'error'
+    '@typescript-eslint/no-unused-vars': ['error']
   }
 };

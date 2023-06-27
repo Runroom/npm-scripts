@@ -10,9 +10,7 @@ module.exports = {
     sourceType: 'module'
   },
   extends: ['eslint:recommended', 'prettier'],
-  plugins: ['prettier'],
   rules: {
-    'prettier/prettier': 'error',
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-unused-vars': 'warn',
@@ -35,8 +33,6 @@ module.exports = {
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-template': 'error',
-    'require-await': 'error',
-    'quotes': ['error', 'single', { avoidEscape: true }],
-    'semi': ['error', 'always']
+    'require-await': 'error'
   }
 };
