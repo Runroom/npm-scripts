@@ -1,6 +1,11 @@
 module.exports = {
-  extends: ['stylelint-prettier/recommended'],
+  extends: ['stylelint-config-recommended', 'stylelint-config-prettier'],
   rules: {
-    'max-nesting-depth': [2, { ignore: ['pseudo-classes'], severity: 'warning' }]
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['define-mixin', 'mixin', 'mixin-content']
+      }
+    ]
   }
 };
