@@ -242,7 +242,7 @@ module.exports = stylelintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev stylelint stylelint-config-prettier stylelint-config-recommended prettier
+npm install --save-dev stylelint stylelint-config-standard stylelint-config-recommended
 ```
 
 ## PostCSS
