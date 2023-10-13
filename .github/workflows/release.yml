@@ -2,29 +2,30 @@ name: Publish and release
 
 on:
     push:
-        branches:
-            - main
+        branches: [main]
 jobs:
     publish:
         runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: ["20.x"]
         steps:
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
               with:
-                  node-version: 18
-            - run: npm install
-            - run: npm run build
-            - id: publish
-              uses: JS-DevTools/npm-publish@v1
+                  node-version: ${{ matrix.node }}
+                  registry-url: https://registry.npmjs.org
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Publish
+              uses: changesets/action@v1
               with:
-                  token: ${{ secrets.NPM_TOKEN }}
-            - if: steps.publish.outputs.type != 'none'
-              uses: actions/create-release@v1
+                  title: Release
+                  publish: npm run release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  tag_name: v${{ steps.publish.outputs.version }}
-                  release_name: v${{ steps.publish.outputs.version }}
-                  body: v${{ steps.publish.outputs.version }}
-                  draft: false
-                  prerelease: false
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
