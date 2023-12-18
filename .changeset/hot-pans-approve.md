@@ -1,5 +1,5 @@
 ---
-'@runroom/npm-scripts': patch
+'@runroom/npm-scripts': major
 ---
 
 Add new postcss config

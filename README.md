@@ -1,11 +1,15 @@
 # `npm-scripts`
 
-This package is a collection of basic `npm` script configurations for Runroom frontend projects. It provides a set of pre-configured scripts and dependencies to streamline the development process and improve code quality.
+This package is a collection of basic `npm` script configurations for Runroom frontend projects. It
+provides a set of pre-configured scripts and dependencies to streamline the development process and
+improve code quality.
 
 ## Features
 
-- Ready-to-use configurations for Babel, ESLint, Prettier, Stylelint, PostCSS, Tailwind, and Lint Staged.
-- Multiple ESLint configurations available for plain JavaScript (vanilla), TypeScript, React, and Next.js projects.
+- Ready-to-use configurations for Babel, ESLint, Prettier, Stylelint, PostCSS, Tailwind, and Lint
+  Staged.
+- Multiple ESLint configurations available for plain JavaScript (vanilla), TypeScript, React, and
+  Next.js projects.
 - Customizable configurations that can be extended or merged to suit specific project needs.
 - Integration with popular testing frameworks like Cypress and Jest.
 - Automatic code formatting on save.
@@ -21,13 +25,18 @@ To get started with `npm-scripts`, follow these simple steps:
 npm install --save-dev @runroom/npm-scripts
 ```
 
-2. Install the required dependencies based on the configurations you intend to use. You can either install all dependencies for all configurations or only the ones required for each specific configuration.
+2. Install the required dependencies based on the configurations you intend to use. You can either
+   install all dependencies for all configurations or only the ones required for each specific
+   configuration.
 
-3. Import or extend the desired configuration files into your project's configuration files (e.g., `.babelrc.js`, `.eslintrc.js`, etc.).
+3. Import or extend the desired configuration files into your project's configuration files ( e.g.,
+   `.babelrc.js`, `.eslintrc.js`, etc.).
 
-4. Customize the configurations as needed, adding or overriding rules to fit your project requirements.
+4. Customize the configurations as needed, adding or overriding rules to fit your project
+   requirements.
 
-5. Start using the pre-configured scripts and enjoy an enhanced development experience with improved code quality.
+5. Start using the pre-configured scripts and enjoy an enhanced development experience with improved
+   code quality.
 
 ## Babel
 
@@ -49,7 +58,8 @@ npm install --save-dev @babel/preset-env
 
 ## ESLint
 
-When using ESLint, there are multiple configurations available to choose from. The configurations include support for plain JavaScript (vanilla), Cypress, Jest, TypeScript, React, and Next.js.
+When using ESLint, there are multiple configurations available to choose from. The configurations
+include support for plain JavaScript (vanilla), Cypress, Jest, TypeScript, React, and Next.js.
 
 To use the ESLint configuration for plain JavaScript (vanilla):
 
@@ -96,7 +106,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-config-standard prettier ts-loader typescript
 ```
 
 To use the ESLint configuration for TypeScript with testing support (Cypress + Jest):
@@ -130,7 +140,7 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser confusing-browser-globals eslint eslint-config-prettier eslint-config-standard eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser confusing-browser-globals eslint eslint-config-prettier eslint-config-standard eslint-plugin-react eslint-plugin-react-hooks prettier ts-loader typescript
 ```
 
 To use the ESLint configuration for Next.js:
@@ -146,12 +156,13 @@ module.exports = eslintConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next eslint-config-prettier eslint-config-standard prettier ts-loader typescript 
+npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-next eslint-config-prettier eslint-config-standard prettier ts-loader typescript
 ```
 
 ### Custom Configuration
 
-If you want to extend the default configurations, you can use the extends files and add them to your configuration file.
+If you want to extend the default configurations, you can use the extends files and add them to your
+configuration file.
 
 For example, to add Jest to the default TypeScript configuration:
 
@@ -166,7 +177,8 @@ eslintTS.extends = [...eslintTS.extends, jest];
 module.exports = eslintTS;
 ```
 
-You can also build your own configuration using the extends files. For example, to create a React vanilla configuration with Jest:
+You can also build your own configuration using the extends files. For example, to create a React
+vanilla configuration with Jest:
 
 ```javascript
 // .eslintrc.js
@@ -182,9 +194,11 @@ module.exports = {
 
 ### How can I extend some configuration locally?
 
-First, consider if the rule really needs to be local to your project, or if creating a pull request to this repository to make it available to everyone is more appropriate.
+First, consider if the rule really needs to be local to your project, or if creating a pull request
+to this repository to make it available to everyone is more appropriate.
 
-If the rule needs to be local to your project, you can extend any configuration by overriding or merging the exported object with your custom configuration.
+If the rule needs to be local to your project, you can extend any configuration by overriding or
+merging the exported object with your custom configuration.
 
 Here's an example of merging:
 
@@ -198,7 +212,7 @@ module.exports = {
     ...eslintConfig.rules,
     'your-game': 'your-rules'
   }
-}
+};
 
 // Overriding
 module.exports = {
@@ -206,7 +220,7 @@ module.exports = {
   rules: {
     'your-game': 'your-rules'
   }
-}
+};
 ```
 
 ## Prettier
@@ -260,7 +274,25 @@ module.exports = postcssConfig;
 **Required dependencies:**
 
 ```bash
-npm install --save-dev autoprefixer cssnano postcss postcss-at-rules-variables postcss-functions postcss-import postcss-mixins postcss-nested postcss-simple-vars postcss-sort-media-queries postcss-space
+npm install --save-dev postcss postcss-import postcss-mixins postcss-sort-media-queries postcss-preset-env
+```
+
+## PostCSS Old
+
+To use the PostCSS configuration:
+
+```javascript
+// postcssOld.config.js
+
+const postcssConfig = require('@runroom/npm-scripts').postcssConfigOld;
+
+module.exports = postcssConfig;
+```
+
+**Required dependencies:**
+
+```bash
+npm install --save-dev postcss postcss-import postcss-functions postcss-space postcss-mixins postcss-simple-vars postcss-nested postcss-at-rules-variables postcss-sort-media-queries autoprefixer
 ```
 
 ## Tailwind
@@ -289,8 +321,6 @@ To use the Lint Staged configuration:
 
 ```javascript
 // lint-staged.config.js
-
-
 
 const lintStagedConfig = require('@runroom/npm-scripts').lintStagedConfig;
 
@@ -335,7 +365,11 @@ This configuration provides auto-formatting on save for `.js`, `.ts`, `.css`, an
 ```
 
 ### Contributing
-We welcome contributions to npm-scripts! If you encounter any issues, have suggestions, or want to add new features, please feel free to submit an issue or create a pull request.
+
+We welcome contributions to npm-scripts! If you encounter any issues, have suggestions, or want to
+add new features, please feel free to submit an issue or create a pull request.
 
 ### License
-npm-scripts is open-source software licensed under the MIT license. Feel free to use, modify, and distribute it as per the terms of the license.
+
+npm-scripts is open-source software licensed under the MIT license. Feel free to use, modify, and
+distribute it as per the terms of the license.
