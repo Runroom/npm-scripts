@@ -22,5 +22,13 @@ module.exports = {
     'prefer-destructuring': 'warn',
     'prefer-rest-params': 'warn',
     'prefer-spread': 'warn'
-  }
+  },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'no-undef': 'off'
+      }
+    }
+  ]
 };
