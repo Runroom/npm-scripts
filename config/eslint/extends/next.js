@@ -13,6 +13,14 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/no-anonymous-default-export': 'error',
     'react-hooks/exhaustive-deps': 'error',
-    'react/display-name': 2
+    'react/display-name': 2,
+    'arrow-body-style': ['error', 'as-needed'],
+    'react/self-closing-comp': ['error', { component: true, html: true }],
+    'no-restricted-imports': ['error', { patterns: ['../'] }],
+    'no-console': 'warn',
+    'object-shorthand': 'error',
+    'prefer-destructuring': 'warn',
+    'prefer-rest-params': 'warn',
+    'prefer-spread': 'warn'
   }
 };
