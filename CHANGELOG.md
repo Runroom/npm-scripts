@@ -1,5 +1,11 @@
 # @runroom/npm-scripts
 
+## 3.0.1
+
+### Patch Changes
+
+- 91a9b3a: Fix no-undef next
+
 ## 3.0.0
 
 ### Major Changes
