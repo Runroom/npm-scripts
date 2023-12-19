@@ -1,5 +1,15 @@
 # @runroom/npm-scripts
 
+## 3.0.0
+
+### Major Changes
+
+- 557315d: Add new postcss config
+
+### Minor Changes
+
+- fbaad21: Update next eslint config
+
 ## 2.2.1
 
 ### Patch Changes
