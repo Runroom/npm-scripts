@@ -30,6 +30,7 @@
         "config/eslint/extends/react.js",
         "config/eslint/extends/typescript.js",
         "config/postcss/postcss.config.js",
+        "config/postcss/postcssOld.config.js",
         "config/postcss/postcss-scripts/em.js",
         "config/postcss/postcss-scripts/get-relative-value.js",
         "config/postcss/postcss-scripts/index.js",

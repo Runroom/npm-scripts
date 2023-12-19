@@ -18,6 +18,7 @@ module.exports = {
   eslintWithTestConfig: require('./config/eslint/eslintTest.config'),
   jestConfig: require('./config/jest/jest.config'),
   lintStagedConfig: require('./config/lint-staged.config'),
+  postcssConfigOld: require('./config/postcss/postcssOld.config'),
   postcssConfig: require('./config/postcss/postcss.config'),
   prettierConfig: require('./config/prettier.config'),
   stylelintConfig: require('./config/stylelint.config'),
