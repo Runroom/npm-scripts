@@ -1,3 +1,3 @@
-const eslintConfig = require('./index.js').prettierConfig;
+const prettierConfig = require('./index.js').prettierConfig;
 
-module.exports = eslintConfig;
+module.exports = prettierConfig;
