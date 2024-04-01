@@ -19,7 +19,8 @@ module.exports = {
           'content',
           'at-root',
           'use',
-          'error'
+          'error',
+          'for'
         ]
       }
     ],
