@@ -1,5 +1,12 @@
 # @runroom/npm-scripts
 
+## 3.0.2
+
+### Patch Changes
+
+- 80c88b6: fix import prettier name
+- dc69e24: update stylelint
+
 ## 3.0.1
 
 ### Patch Changes
