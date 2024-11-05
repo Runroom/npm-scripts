@@ -4,7 +4,7 @@ This package is a collection of basic `npm` script configurations for Runroom fr
 provides a set of pre-configured scripts and dependencies to streamline the development process and
 improve code quality.
 
-## Features
+## Featuresf
 
 - Ready-to-use configurations for Babel, ESLint, Prettier, Stylelint, PostCSS, Tailwind, and Lint
   Staged.
